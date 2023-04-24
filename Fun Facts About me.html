@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Fun Facts About Me</title>
+  <style>
+    /* CSS code goes here */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: rgb(48, 5, 5);
+      margin: 0;
+      padding: 0;
+    }
+
+    #container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 30px;
+      background-color: #c20d0d;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      line-height: 1.8;
+    }
+
+    h1 {
+      font-size: 32px;
+      color: #0e0202;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #666;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    ol {
+      list-style: none;
+      counter-reset: my-counter;
+      padding-left: 0;
+      text-align: center;
+    }
+
+    li::before {
+      counter-increment: my-counter;
+      content: counter(my-counter) ". ";
+      font-weight: bold;
+      margin-right: 5px;
+
+    }
+
+    li {
+      line-height: 1.7;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <h1>Fun Facts About Me</h1>
+    <img src="Me.jpg" alt="Me" style="width:400px">
+
+    <ol>
+      <li>I love The Life is Good brand T-shirts and wear them almost every day</li>
+      <li>I tried diving for the first time when I was 20 years old, in the Red Sea in Egypt</li>
+      <li>I love building LEGO sets</li>
+      <li>I am very orderly person and i love to organize drawers and closets</li>
+      <li>My dream job is working IT field, came true</li>
+      <li>I buy a beautiful bouquet for myself every week</li>
+      <li>My husband is the best cook</li>
+      <li>The first concert i attended was, the Weeknd</li>
+      <li>When I have a free afternoon, I like to have a full body massage</li>
+      <li>I like to surprise and give gifts to people because, it brings me joy to see their happy faces</li>
+    </ol>
+  </div>
+  
+  <script>
+    window.onload = function() {
+      var container = document.getElementById("container");
+      container.style.display = "none";
+      setTimeout(function() {
+        container.style.display = "block";
+        alert("Fun Facts About Me");
+      }, 1000);
+    };
+  </script>  
+
+  
+</body>
+
+</html>
